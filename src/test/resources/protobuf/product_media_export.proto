@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ru.spice.at.common.dto.dam.grpc;
+option go_package = "";
+
+message UpdateProductMedia {
+  string sku = 1;
+  bool full_replacement = 2;
+  repeated Media media = 3;
+}
+
+message Media {
+  string filename = 1;
+  string url = 2;
+}

@@ -1,0 +1,63 @@
+image: dreg.sbmt.io/dhub/library/maven:3.8-openjdk-11
+
+default:
+  tags:
+    - paas-qa
+stages:
+  - compile
+  - tests
+  - allure
+variables:
+  SUITE_FILE:
+    value: "apiSpiceDamSuite.xml"
+    description: "Файл сьюта для тестовых сценариев (apiSpiceDamSuite.xml, uiSpiceDamSuite.xml). Для feature стендов apiSpiceDamFeatureSuite.xml. 
+    Также можно запустить тесты отдельно по сервисам: apiSpiceDamImportSuite.xml, apiSpiceDamExportSuite.xml"
+  ALLURE_SERVICE_NAME:
+    value: "dam-api-stable-stage"
+    description: "Название пространства в аллюре для выгрузки результатов (dam-api-stable-stage, dam-ui-stable-stage, dam-api-feature-stage)"
+  STAND_PROP_NAME:
+    value: "spiceDamStand"
+    description: "Стендовые настройки"
+  STAND_NAME:
+    value: "stand-stable"
+    description: "Название стенда. По дефолту используется стабильный стенд. Для использования feature стендов, прописать номер стенда, например, stand-1111"
+  TEST_IT_UPLOAD:
+    value: "false"
+    description: "Выгрузка результатов прогона в test it. По дефолту выгрузка false (не используется). Принимает значения true/false"
+Compile:
+  stage: compile
+  script:
+    - mvn compile
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH || $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH || $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: never
+Tests:
+  stage: tests
+  allow_failure: true
+  script:
+    - mvn test -DsuiteFile="$SUITE_FILE" -DstandProperties=$STAND_PROP_NAME -DstandName=$STAND_NAME "-DencodedKey=$ENCODED_KEY" -DtmsPrivateToken=$TMS_TOKEN -DtmsTestIt=$TEST_IT_UPLOAD -Dremote=true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH || $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+  artifacts:
+    when: always
+    paths:
+      - target/allure-results
+Allure report:
+  stage: allure
+  script:
+    - bash ./report.sh $ALLURE_SERVICE_NAME
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH || $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+  artifacts:
+    when: always
+    paths:
+      - target/allure-results

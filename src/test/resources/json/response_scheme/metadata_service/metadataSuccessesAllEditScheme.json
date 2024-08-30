@@ -1,0 +1,231 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "key",
+        "url",
+        "size",
+        "width",
+        "height",
+        "resolution",
+        "format",
+        "sku",
+        "external_offer",
+        "received",
+        "external_task_id",
+        "master_seller",
+        "external_draft_done",
+        "created_by",
+        "updated_by",
+        "created_at",
+        "updated_at",
+        "is_copyright",
+        "assignee",
+        "quality",
+        "status",
+        "source",
+        "master_category",
+        "filename",
+        "origin_filename",
+        "description",
+        "keywords",
+        "is_raw_image",
+        "is_own_trademark",
+        "is_main_image",
+        "priority",
+        "import_type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "size": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "resolution": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "sku": {
+          "type": ["string", "null"]
+        },
+        "external_offer": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ]
+        },
+        "received": {
+          "type": "string",
+          "enum": ["а тут ничего нет"]
+        },
+        "external_task_id": {
+          "type": ["string", "null"]
+        },
+        "master_seller": {
+          "type": ["object", "null"]
+        },
+        "external_draft_done": {
+          "type": ["boolean", "null"]
+        },
+        "created_by": {
+          "type": "object",
+          "required": [
+            "id",
+            "full_name",
+            "position"
+          ]
+        },
+        "updated_by": {
+          "type": "object",
+          "required": [
+            "id",
+            "full_name",
+            "position"
+          ]
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "is_copyright": {
+          "type": "boolean",
+          "enum": [true]
+        },
+        "assignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "full_name",
+            "position"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string",
+              "enum": ["Великодная Екатерина", "Молчанова Марина", "Петрова Виктория", "Петров Евгений", "Шевкин Владислав"]
+            }
+          }
+        },
+        "quality": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string",
+              "enum": ["Плохое"]
+            }
+          }
+        },
+        "status": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string",
+              "enum": ["Архивный", "Новый", "Удаленный", "В работе", "Актуальный", "В обработке"]
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "master_category": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "filename": {
+          "type": "string"
+        },
+        "origin_filename": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "enum": ["Описание этого продукта зашкаливает"]
+        },
+        "keywords": {
+          "type": "array",
+          "enum": [["слово", "word", "key"]]
+        },
+        "is_raw_image": {
+          "type": "boolean",
+          "enum": [false]
+        },
+        "is_own_trademark": {
+          "type": "null"
+        },
+        "is_main_image": {
+          "type": ["string", "null"]
+        },
+        "priority": {
+          "type": ["integer", "null"]
+        },
+        "import_type": {
+          "type": ["object", "null"]
+        }
+      }
+    }
+  }
+}

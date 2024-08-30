@@ -1,0 +1,739 @@
+{
+  "administratorPermissions": {
+    "data": [
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.basic",
+        "resource": "metadata.list.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.view.all",
+        "resource": "metadata.view.all",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.base",
+        "resource": "metadata.statuses.base",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/contents.delete",
+        "resource": "contents.delete",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.status",
+        "resource": "metadata.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.delete",
+        "resource": "metadata.delete",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.additional",
+        "resource": "metadata.list.additional",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses",
+        "resource": "metadata.statuses",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.extended",
+        "resource": "metadata.statuses.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.basic",
+        "resource": "metadata.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.additional",
+        "resource": "metadata.additional",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.extended",
+        "resource": "metadata.list.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.extended",
+        "resource": "metadata.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations.view.all",
+        "resource": "validations.view.all",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.status",
+        "resource": "metadata.list.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "export-service/export.all",
+        "resource": "export.all",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/product-media-export",
+        "resource": "product-media-export",
+        "service_id": "metadata"
+      }
+    ]
+  },
+  "photoproductionPermissions": {
+    "data": [
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.base",
+        "resource": "metadata.statuses.base",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.extended",
+        "resource": "metadata.list.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.basic",
+        "resource": "metadata.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.extended",
+        "resource": "metadata.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses",
+        "resource": "metadata.statuses",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "export-service/export.all",
+        "resource": "export.all",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.status",
+        "resource": "metadata.list.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.extended",
+        "resource": "metadata.statuses.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.view.all",
+        "resource": "metadata.view.all",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.status",
+        "resource": "metadata.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations.view.all",
+        "resource": "validations.view.all",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.basic",
+        "resource": "metadata.list.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/product-media-export",
+        "resource": "product-media-export",
+        "service_id": "metadata"
+      }
+    ]
+  },
+  "contentProductionPermissions": {
+    "data": [
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.status",
+        "resource": "metadata.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.extended",
+        "resource": "metadata.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses",
+        "resource": "metadata.statuses",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.status",
+        "resource": "metadata.list.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write",
+          "read"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations.view.all",
+        "resource": "validations.view.all",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.basic",
+        "resource": "metadata.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.base",
+        "resource": "metadata.statuses.base",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.basic",
+        "resource": "metadata.list.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write",
+          "read"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "export-service/export.all",
+        "resource": "export.all",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.view.all",
+        "resource": "metadata.view.all",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.extended",
+        "resource": "metadata.statuses.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.extended",
+        "resource": "metadata.list.extended",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/product-media-export",
+        "resource": "product-media-export",
+        "service_id": "metadata"
+      }
+    ]
+  },
+  "contentSupportPermissions": {
+    "data": [
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "export-service/export.all",
+        "resource": "export.all",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses.base",
+        "resource": "metadata.statuses.base",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.basic",
+        "resource": "metadata.list.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.status",
+        "resource": "metadata.list.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.view.all",
+        "resource": "metadata.view.all",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations.view.all",
+        "resource": "validations.view.all",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.status",
+        "resource": "metadata.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses",
+        "resource": "metadata.statuses",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.basic",
+        "resource": "metadata.basic",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/product-media-export",
+        "resource": "product-media-export",
+        "service_id": "metadata"
+      }
+    ]
+  },
+  "photoproductionOutsourcePermissions": {
+    "data": [
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.list.status",
+        "resource": "metadata.list.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "metadata/metadata.status",
+        "resource": "metadata.status",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "metadata/metadata.statuses",
+        "resource": "metadata.statuses",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      }
+    ]
+  },
+  "contentProductionOutsourcePermissions": {
+    "data": [
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "export-service/export",
+        "resource": "export",
+        "service_id": "export-service"
+      },
+      {
+        "access": [
+          "write"
+        ],
+        "permission": "import-service/import",
+        "resource": "import",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read"
+        ],
+        "permission": "import-service/validations",
+        "resource": "validations",
+        "service_id": "import-service"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata",
+        "resource": "metadata",
+        "service_id": "metadata"
+      },
+      {
+        "access": [
+          "read",
+          "write"
+        ],
+        "permission": "metadata/metadata.list",
+        "resource": "metadata.list",
+        "service_id": "metadata"
+      }
+    ]
+  },
+  "description": "Описание этого продукта зашкаливает",
+  "keywords": [
+    "слово",
+    "word",
+    "key"
+  ],
+  "received": "а тут ничего нет"
+}

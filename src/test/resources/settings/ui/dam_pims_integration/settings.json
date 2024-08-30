@@ -1,0 +1,50 @@
+{
+  "pimsUrl": "https://pims.k-stage.sbermarket.tech",
+  "pimsLogin": "pim_tester@instamart.ru",
+  "pimsEncryptPassword": "5E0541AD45BCD086136D1491ABF743B2",
+  "taskEndpoint": "/task/%s/update/offers/",
+  "taskListEndpoint": "/task/",
+  "taskId": "40380",
+  "mediaUrls": [
+    "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "https://www.bethowen.ru/images/sbermarket/538224_1.jpg",
+    "https://www.bethowen.ru/images/sbermarket/539015_1.jpg"
+  ],
+  "offers": [
+    {
+      "offerId": "333",
+      "externalOfferId": "16867",
+      "masterSellerId": "1",
+      "sku": "212120",
+      "isOwnTrademark": false,
+      "draftDone": false
+    },
+    {
+      "offerId": "88237",
+      "externalOfferId": "5",
+      "masterSellerId": "1",
+      "sku": null,
+      "isOwnTrademark": false,
+      "draftDone": false
+    }
+  ],
+  "importParameters": {
+    "externalOfferName": "Внешний оффер",
+    "externalOfferId": "90000146007",
+    "createdAt": "2023-02-08T11:35:30.747834Z",
+    "updatedAt": "2023-02-18T01:50:09.789207Z",
+    "masterSellerId": 137,
+    "mediaName": "test_2.jpg",
+    "mediaUrl": "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "mediaPriority": 15
+  },
+  "createProduct": {
+    "taskType": "Создание товаров",
+    "taskSubtype": "Продукты питания",
+    "category": "Брелоки, ключницы",
+    "weight": "1",
+    "status": "20 - Черновик заполнен",
+    "importType": "PIMS",
+    "createdBy": "Пользователь PIMS"
+  }
+}

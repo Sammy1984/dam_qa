@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/results"
+      }
+    }
+  },
+  "definitions": {
+    "results": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "enum": ["Новый", "В работе", "Актуальный", "Архивный", "Удаленный", "Готов к проверке"]
+        }
+      }
+    }
+  }
+}

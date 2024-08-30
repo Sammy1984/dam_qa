@@ -1,0 +1,224 @@
+{
+  "validImages": [
+    {
+      "filename": "test_1.jpeg",
+      "format": "JPEG"
+    },
+    {
+      "filename": "test_2.jpeg",
+      "format": "JPEG",
+      "width": 900,
+      "height": 700
+    }
+  ],
+  "invalidNameImages": [
+    {
+      "filename": "test_!%s.jpeg",
+      "format": "JPEG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "тест_1.jpeg",
+      "format": "JPEG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "%%%_1.jpeg",
+      "format": "JPEG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "test_test2.jpeg",
+      "format": "JPEG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "test_$$$.jpeg",
+      "format": "JPEG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "_11.png",
+      "format": "PNG",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "filename": "11111.png",
+      "format": "PNG",
+      "width": 10,
+      "height": 10
+    }
+  ],
+  "errorTypes": [
+    {
+      "type": "InvalidType",
+      "description": "Невалидный тип данных"
+    },
+    {
+      "type": "InvalidFile",
+      "description": "Невалидный файл"
+    },
+    {
+      "type": "InvalidName",
+      "description": "Неверный формат наименования"
+    },
+    {
+      "type": "InvalidLength",
+      "description": "Недопустимая длина наименования"
+    },
+    {
+      "type": "InvalidFileFormat",
+      "description": "Недопустимый формат файла"
+    },
+    {
+      "type": "InvalidParameterValue",
+      "description": "Недопустимое значение параметра"
+    },
+    {
+      "type": "InvalidParameterCount",
+      "description": "Недопустимое количество параметров"
+    },
+    {
+      "type": "FileNameFormatConflict",
+      "description": "Структура файла не соответствует его расширению в имени"
+    },
+    {
+      "type": "InvalidFileName",
+      "description": "Неверный формат наименования"
+    }
+  ],
+  "firstErrorDownloadTable": [
+    ["Имя файла", "Ошибка"],
+    ["{name}", "Невалидный тип данных"]
+  ],
+  "secondErrorDownloadTable": [
+    ["Имя файла", "Ошибка"],
+    ["{name}", "Невалидный файл"],
+    ["{name}", "Недопустимый формат файла"]
+  ],
+  "errorInvalidType": "InvalidType",
+  "errorInvalidTypeReason": "Невалидный тип данных",
+  "errorNotFound": "NotFound",
+  "errorNotFoundReason": "Объект не найден",
+  "invalidEmptyBodyStringParam": {
+    "name": "body",
+    "type": "RequiredField",
+    "reason": "Отсутствует обязательное поле"
+  },
+  "invalidBodyStringParam": {
+    "name": "body",
+    "type": "InvalidType",
+    "reason": "Невалидный тип данных"
+  },
+  "badQualityImages": [
+    {
+      "format": "JPEG",
+      "width": 500,
+      "height": 499
+    },
+    {
+      "format": "PNG",
+      "width": 499,
+      "height": 500
+    },
+    {
+      "format": "JPEG",
+      "width": 499,
+      "height": 499
+    },
+    {
+      "format": "JPEG",
+      "width": 420,
+      "height": 160
+    }
+  ],
+  "goodQualityImages": [
+    {
+      "format": "JPEG",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "format": "JPEG",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "format": "JPEG",
+      "width": 2001,
+      "height": 2000
+    },
+    {
+      "format": "JPEG",
+      "width": 2000,
+      "height": 2001
+    }
+  ],
+  "toRevisionQualityImages": [
+    {
+      "format": "PNG",
+      "width": 2001,
+      "height": 2001
+    },
+    {
+      "format": "PNG",
+      "width": 2100,
+      "height": 2100
+    }
+  ],
+  "baseExternalUrl": "https://dam-gw.k-stage.sbmt.io",
+  "externalToken": "F383F3743E0069AF51F151E7BBB6F8ECBB9D9EC1ED40C9B8646EB43FA36D3DC79B23997AECB8C89E6C4C96390A7D35208DBC51D431986AB6CB9BA4E8E292E2CB66D161C2393BADD9C5018B488DE8D7B028F29353D675EBD348CF1EECE001EACC282177AEFC99B7041E95BA9BFE95F4C6D638019795BB7920BB0660311A41C97E",
+  "xmpMetadata": {
+    "assigneeId": "Null",
+    "copyright": "False",
+    "createdAt": "2023-08-31T06:48:37.417691+00:00",
+    "createdBy": "ba3d6233-65ea-43e9-b6bb-2bec5b31e2d9",
+    "description": "Null",
+    "externalDraftDone": "Null",
+    "externalOfferId": "Null",
+    "externalOfferName": "Null",
+    "externalTaskId": "Null",
+    "filename": "test_xmp.jpeg",
+    "importTypeCode": "0",
+    "importTypeId": "fde2eb05-de62-4ad6-9a85-be2370773591",
+    "importTypeName": "manual",
+    "key": "85d8c3d9-7367-4d30-b676-0f04b9fdc957",
+    "keywords": [],
+    "masterCategoryId": "Null",
+    "masterCategoryName": "Продукты питания",
+    "masterSellerId": "Null",
+    "metadataId": "38972473-9771-4493-9d9a-dcbece5f98a0",
+    "originFilename": "test_xmp.jpeg",
+    "ownTrademark": "False",
+    "priority": "Null",
+    "qualityCode": "1",
+    "qualityId": "c219cc54-e58d-4631-8ab8-3e715f5cbe10",
+    "qualityName": "good",
+    "rawImage": "True",
+    "received": "Null",
+    "sku": "Null",
+    "sourceCode": "0",
+    "sourceId": "Null",
+    "sourceName": "brand",
+    "statusCode": "0",
+    "statusId": "1dd4b11e-4118-49e9-b41e-1c36714c3fde",
+    "statusName": "new",
+    "updatedAt": "2023-08-31T06:48:41.035611+00:00",
+    "updatedBy": "ba3d6233-65ea-43e9-b6bb-2bec5b31e2d9"
+  },
+  "retouchFiles": [
+    "без_фона.jpg",
+    "без_рамок_451_на_372.jpeg",
+    "без_рамок_3840_на_2560.jpeg",
+    "без_фона_совсем.png"
+  ],
+  "retouchKeywords": [
+    "пройдена_нормализация"
+  ]
+}

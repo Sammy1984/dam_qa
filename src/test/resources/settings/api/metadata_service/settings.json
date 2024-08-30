@@ -1,0 +1,185 @@
+{
+  "archiveStatus": "Архивный",
+  "newStatus": "Новый",
+  "assigneeName": "Великодная Екатерина",
+  "createdName": "Админов Админ",
+  "categoryName": "Текстиль для дома",
+  "unknownCategoryName": "Неизвестная категория",
+  "retailerName": "12 слоёв",
+  "retailersExtId": "1177",
+  "images": [
+    {
+      "size": 1000,
+      "width": 900,
+      "height": 700,
+      "format": "JPEG"
+    },
+    {
+      "size": 111,
+      "width": 100,
+      "height": 200,
+      "format": "JPEG"
+    },
+    {
+      "size": 2000,
+      "width": 122,
+      "height": 400,
+      "format": "PNG"
+    }
+  ],
+  "invalidFilenames": ["21211.jpeg", "ыва_22.jpeg", "###_22.jpeg", "#test_22.jpeg"],
+  "invalidFormatFilenames": ["", "txt_22.txt"],
+  "invalidParams": [
+    {
+      "name": "filename",
+      "type": "InvalidFormat",
+      "reason": "Неверный формат значения поля"
+    },
+    {
+      "name":"status_id",
+      "type":"NotFound",
+      "reason":"Объект не найден"
+    },
+    {
+      "name":"status_id",
+      "type":"InvalidType",
+      "reason":"Невалидный тип данных"
+    },
+    {
+      "name": "is_own_trademark",
+      "type":"IsNotAValidBoolean",
+      "reason":"Объект не найден"
+    },
+    {
+      "name": "sku",
+      "type": "InvalidFormat",
+      "reason": "Недопустимый формат"
+    },
+    {
+      "name": "priority",
+      "type": "InvalidParameterValue",
+      "reason": "Недопустимое значение параметра"
+    },
+    {
+      "name": "priority",
+      "type": "InvalidType",
+      "reason": "Невалидный тип данных"
+    },
+    {
+      "name": "sku",
+      "type": "InvalidLength",
+      "reason": "Недопустимая длина наименования"
+    },
+    {
+      "name": "filename",
+      "type": "InvalidFileFormat",
+      "reason": "Невалидный формат файла"
+    },
+    {
+      "name": "keywords",
+      "type": "InvalidParameterCount",
+      "reason": "Недопустимое количество параметров"
+    }
+  ],
+
+  "invalidBodyParams": [
+    {
+      "name": "filename",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "size",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "width",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "height",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "format",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "url",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "key",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    },
+    {
+      "name": "hash",
+      "type": "RequiredField",
+      "reason": "Отсутствует обязательное поле"
+    }
+  ],
+  "invalidEmptyBodyStringParam": {
+    "name": "body",
+    "type": "RequiredField",
+    "reason": "Отсутствует обязательное поле"
+  },
+  "invalidBodyStringParam": {
+    "name": "body",
+    "type": "InvalidType",
+    "reason": "Невалидный тип данных"
+  },
+  "invalidProcessingParam": {
+    "name": "processing_type",
+    "type": "ProcessingError",
+    "reason": "Ошибка обработки изображения"
+  },
+  "invalidNotFoundParam": {
+    "name": "processing_type",
+    "type": "NotFound",
+    "reason": "Объект не найден"
+  },
+  "invalidParameterValueActual": {
+    "name": "status",
+    "type": "InvalidParameterValue",
+    "reason": "У файла %s статус не Актуальный"
+  },
+  "invalidParameterValueName": {
+    "name": "status",
+    "type": "InvalidParameterValue",
+    "reason": "У файла %s имя не SKU_N.ext"
+  },
+  "importParameters": {
+    "externalOfferName": "Внешний оффер",
+    "externalOfferId": "90000146007",
+    "createdAt": "2023-02-08T11:35:30.747834Z",
+    "updatedAt": "2023-02-18T01:50:09.789207Z",
+    "masterSellerId": 137,
+    "mediaName": "test_2.jpg",
+    "mediaUrl": "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "mediaPriority": 15
+  },
+  "importMetadata": {
+    "externalTaskId": 788,
+    "sku": 123123,
+    "isOwnTrademark": true,
+    "draftDone": true
+  },
+  "invalidRetailersDictionaryParams": [
+    {
+      "name": "max_page_size",
+      "type": "InvalidType",
+      "reason": "Невалидный тип данных"
+    },
+    {
+      "name": "page_token",
+      "type": "InvalidType",
+      "reason": "Невалидный тип данных"
+    }
+  ]
+}

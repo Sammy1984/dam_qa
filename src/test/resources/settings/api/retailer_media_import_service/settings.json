@@ -1,0 +1,26 @@
+{
+  "unknownCategory": "Неизвестная категория",
+  "readyForRetouchAt": "2024-01-01T00:00:00+00:00",
+  "keywordsIsDeleted": ["отклонено_КМ"],
+  "importParameters": {
+    "externalOfferName": "Внешний оффер",
+    "externalOfferId": "90000146007",
+    "createdAt": "2023-02-08T11:35:30.747834Z",
+    "updatedAt": "2023-02-18T01:50:09.789207Z",
+    "masterSellerId": 137,
+    "mediaName": "test_2.jpg",
+    "mediaUrl": "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "mediaPriority": 15
+  },
+  "anotherMediaUrl": "https://www.bethowen.ru/images/sbermarket/538214_1.jpg",
+  "normalizationKeywords": ["пройдена_нормализация"],
+  "pdfMediaUrl": "https://doskol.narod.ru/FILES/HTML.pdf",
+  "s3MediaUrl": "s3://sbermarket-retailers-zolotaya-rybka/images/2023/6/1/15686.jpg",
+  "importMetadata": {
+    "taskIdForDam": 788,
+    "sku": 123123,
+    "masterCategoryId": 798273,
+    "isOwnTrademark": true,
+    "draftDone": true
+  }
+}

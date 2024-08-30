@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package ru.spice.at.common.dto.dam.grpc;
+option go_package = "";
+
+import "google/protobuf/struct.proto";
+
+message OfferUpdate {
+  int64 external_offer_id = 1;
+  uint32 master_seller_id = 2;
+  uint32 master_category_id = 3;
+  NullableInt external_task_id = 4;
+  NullableInt sku = 5;
+  bool is_own_trademark = 6;
+  bool draft_done = 7;
+
+  enum Status {
+    NOT_TAKEN = 0;
+    BINDED = 1;
+    IN_WORK_MATCHING = 2;
+    NEED_CREATE_PRODUCT = 3;
+    NEED_CREATE_VARIANT_PRODUCT = 4;
+    NEED_CREATE_CATEGORY = 5;
+    IMPOSSIBLE_TO_PROCESS = 6;
+    DOUBLE = 7;
+    NOT_REQUIRE_PROCESSING = 8;
+    CONTENT_REQUEST_REQUIRED = 9;
+    CONTENT_REQUESTED = 10;
+    UNABLE_TO_REQUEST_CONTENT = 11;
+    CONTENT_REQUESTED_NOT_ANSWER = 12;
+    IN_WORK_CREATE_PRODUCT = 13;
+    IN_WORK_CREATE_CATEGORY = 14;
+    REQUIRED_TO_REQUEST_CONTENT_FROM_RETAILER = 15;
+    NOT_CURRENT_ASSORTMENT = 17;
+    DRAFT_COMPLETED = 20;
+    OFFER_SWITCH_OFF = 21;
+  }
+
+  Status status = 8;
+  string comment = 9;
+}
+
+message NullableInt {
+  oneof kind {
+    google.protobuf.NullValue null = 1;
+    int32 data = 2;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/results"
+      }
+    }
+  },
+  "definitions": {
+    "results": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "parent_id",
+        "has_children"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": ["string", "null"]
+        },
+        "has_children": {
+          "type": ["boolean", "null"]
+        }
+      }
+    }
+  }
+}

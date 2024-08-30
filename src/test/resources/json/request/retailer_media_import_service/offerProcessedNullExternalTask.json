@@ -1,0 +1,31 @@
+{
+  "external_offer_id": 112233,
+  "master_seller_id": 99,
+  "master_category_id": 1383,
+  "external_task_id": {
+    "data": 11
+  },
+  "task_id_for_dam": {
+    "data": 9876
+  },
+  "sku": {
+    "data": 86380
+  },
+  "is_own_trademark": true,
+  "draft_done": false,
+  "status": "BINDED",
+  "comment": "comment",
+  "matching_status": "NO_STATUS",
+  "processing_status": "IN_WORK",
+  "categorization_status": "CATEGORIZATION_NO_STATUS",
+  "updated_at": "2024-01-01T00:00:00Z",
+  "creator_id": {
+    "data": "111"
+  },
+  "process_type": "CONTENT_AUTOGENERATION",
+  "external_task_type": null,
+  "task_type_for_dam": null,
+  "creator_email": {
+    "data": "administrator@sbermarket.ru"
+  }
+}

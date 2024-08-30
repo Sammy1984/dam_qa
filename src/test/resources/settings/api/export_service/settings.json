@@ -1,0 +1,51 @@
+{
+  "images": [
+    {
+      "format": "JPEG",
+      "width": 100,
+      "height": 100
+    },
+    {
+      "format": "JPEG",
+      "width": 90,
+      "height": 70
+    },
+    {
+      "format": "JPEG",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "format": "JPEG",
+      "width": 300,
+      "height": 300
+    }
+  ],
+  "invalidParams": [
+    {
+      "name": "id",
+      "type": "NotFound",
+      "reason": "Объект не найден"
+    },
+    {
+      "name": "body",
+      "type": "InvalidType",
+      "reason": "Невалидный тип данных"
+    },
+    {
+      "name": "filename",
+      "type": "InvalidSymbols",
+      "reason": "Недопустимые символы"
+    },
+    {
+      "name": "filename",
+      "type": "InvalidLength",
+      "reason": "Недопустимая длина наименования"
+    },
+    {
+      "name": "data",
+      "type": "InvalidType",
+      "reason": "Невалидный тип данных"
+    }
+  ]
+}

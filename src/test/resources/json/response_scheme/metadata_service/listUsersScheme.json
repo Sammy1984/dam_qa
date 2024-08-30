@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/results"
+      }
+    }
+  },
+  "definitions": {
+    "results": {
+      "type": "object",
+      "required": [
+        "id",
+        "full_name",
+        "position"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

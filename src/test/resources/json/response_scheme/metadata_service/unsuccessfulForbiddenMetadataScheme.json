@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "error"
+  ],
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": [
+        "type",
+        "title",
+        "status"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["forbidden"]
+        },
+        "key": {
+          "type": "string",
+          "enum": ["The access to the requested resource is denied."]
+        },
+        "status": {
+          "type": "integer",
+          "enum": [403]
+        }
+      }
+    }
+  }
+}

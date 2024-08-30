@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/results"
+      }
+    }
+  },
+  "definitions": {
+    "results": {
+      "type": "object",
+      "required": [
+        "id",
+        "ext_id",
+        "name",
+        "business_area"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ext_id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "business_area": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

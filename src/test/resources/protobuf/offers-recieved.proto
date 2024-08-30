@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package ru.spice.at.common.dto.dam.grpc;
+option go_package = "gitlab.sbmt.io/paas/content/spice/tms/backlog-service/pkg/clients/ris-exporter/events/offers-received";
+message Offer {
+	string category_path = 1;
+	string brand = 2;
+	string manufacturer = 3;
+	string country = 4;
+	string name = 5;
+	Package package = 6;
+	repeated string eans = 7;
+	Seller seller = 8;
+	int64 external_offer_id = 9;
+	string created_at = 11;
+	string updated_at = 12;
+	string extra = 13;
+	repeated Media media = 14;
+	bool is_option = 15;
+	string variants_group_id = 16;
+    repeated int64 categories_ids = 17;
+    repeated string external_categories_ids = 18;
+}
+
+message Package {
+	string pack_type = 1;
+	uint32 item_per_pack = 2;
+}
+
+message Seller {
+	uint32 master_seller_id = 3;
+	repeated string slugs = 4;
+}
+
+message Media {
+	string type = 1;
+	string name = 2;
+	string url = 3;
+	uint32 priority = 4;
+}

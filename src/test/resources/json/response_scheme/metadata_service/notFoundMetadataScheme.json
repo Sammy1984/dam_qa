@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "error"
+  ],
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": [
+        "type",
+        "title",
+        "status"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["not-found"]
+        },
+        "key": {
+          "type": "string",
+          "enum": ["The requested resource was not found."]
+        },
+        "status": {
+          "type": "integer",
+          "enum": [404]
+        }
+      }
+    }
+  }
+}

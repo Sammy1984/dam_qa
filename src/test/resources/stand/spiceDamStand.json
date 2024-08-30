@@ -1,0 +1,85 @@
+{
+  "stand": "spice-dam",
+  "baseUri": "https://dam-gw.k-stage.sbermarket.tech",
+  "frontendUri": "https://dam.gw-stage.sbermarket.tech",
+  "authCredentials": {
+    "alias": "keycloak",
+    "authUrl": "https://iam.gw-stage.sbermarket.tech/auth/realms/spice/protocol/openid-connect"
+  },
+  "remote": {
+    "host": "moon.sbmt.io",
+    "scheme": "https",
+    "login": "moon",
+    "password": "2qHk2HkgkM4zt5J"
+  },
+  "kafka": {
+    "bootstrapServer": "kafka-bootstrap.k-stage.sbmt.io:9095",
+    "credentials": [
+      {
+        "topic": "yc.content.cdc.offers.0",
+        "login": "paas-content-spice-dam-retailer-media-import-service",
+        "password": "E0CCB693510937F4AC2B6213EE2C8E77220E30435DBDCF6ECAC1B94503CBDE0BF72A4E7501A6CF6E4B945A2D38844404"
+      },
+      {
+        "topic": "yc.content.cdc.offer-processed.0",
+        "login": "paas-content-spice-dam-metadata",
+        "password": "57F307E4E4895980590A668D4377E081E2184FB46880479EA159E9452C4FB6D9F72A4E7501A6CF6E4B945A2D38844404"
+      },
+      {
+        "topic": "yc.content.cmd.product-media.0",
+        "login": "paas-content-spice-dam-metadata",
+        "password": "57F307E4E4895980590A668D4377E081E2184FB46880479EA159E9452C4FB6D9F72A4E7501A6CF6E4B945A2D38844404"
+      }
+    ]
+  },
+  "dbConfig": {
+    "host": "localhost",
+    "port": "5432",
+    "dbName": "app",
+    "username":"app",
+    "password": "pass",
+    "type": "postgres"
+  },
+  "kubernetesConfig": {
+    "namespace": "paas-content-spice-dam-metadata",
+    "label": "statefulset.kubernetes.io/pod-name=postgresql-0"
+  },
+  "users": [
+    {
+      "username": "administrator@sbermarket.ru",
+      "password": "C55D57C354A79A2E63351D403E856CFFF72A4E7501A6CF6E4B945A2D38844404",
+      "name": "Админов Админ",
+      "role": "ADMINISTRATOR"
+    },
+    {
+      "username": "photoproduction@sbermarket.ru",
+      "password": "D7F71A1DF9153598CB296CFB6A564E25",
+      "name": "Продакшенов Фото",
+      "role": "PHOTOPRODUCTION"
+    },
+    {
+      "username": "content_production@sbermarket.ru",
+      "password": "D7F71A1DF9153598CB296CFB6A564E25",
+      "name": "Продакшенов Контент",
+      "role": "CONTENT_PRODUCTION"
+    },
+    {
+      "username": "content_support@sbermarket.ru",
+      "password": "D7F71A1DF9153598CB296CFB6A564E25",
+      "name": "Саппортов Контент",
+      "role": "CONTENT_SUPPORT"
+    },
+    {
+      "username": "photoproduction_outsource@sbermarket.ru",
+      "password": "D7F71A1DF9153598CB296CFB6A564E25",
+      "name": "Продакшенов Фото Аутсорсович",
+      "role": "PHOTOPRODUCTION_OUTSOURCE"
+    },
+    {
+      "username": "content_production_outsource@sbermarket.ru",
+      "password": "D7F71A1DF9153598CB296CFB6A564E25",
+      "name": "Продакшенов Контент Аутсорсович",
+      "role": "CONTENT_PRODUCTION_OUTSOURCE"
+    }
+  ]
+}

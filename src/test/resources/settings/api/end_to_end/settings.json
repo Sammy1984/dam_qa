@@ -1,0 +1,14 @@
+{
+  "baseExternalUrl": "https://dam-gw.k-stage.sbmt.io",
+  "externalToken": "F383F3743E0069AF51F151E7BBB6F8ECBB9D9EC1ED40C9B8646EB43FA36D3DC79B23997AECB8C89E6C4C96390A7D35208DBC51D431986AB6CB9BA4E8E292E2CB66D161C2393BADD9C5018B488DE8D7B028F29353D675EBD348CF1EECE001EACC282177AEFC99B7041E95BA9BFE95F4C6D638019795BB7920BB0660311A41C97E",
+  "importParameters": {
+    "externalOfferName": "Внешний оффер",
+    "externalOfferId": "90000146007",
+    "createdAt": "2023-02-08T11:35:30.747834Z",
+    "updatedAt": "2023-02-18T01:50:09.789207Z",
+    "masterSellerId": 137,
+    "mediaName": "test_2.jpg",
+    "mediaUrl": "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "mediaPriority": 15
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "data",
+    "total",
+    "unavailable"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "sku": {
+              "type": ["string", "null"]
+            },
+            "filename": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "key": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "sku",
+            "filename",
+            "url",
+            "key"
+          ]
+        }
+      ]
+    },
+    "total": {
+      "type": "integer"
+    },
+    "unavailable": {
+      "type": "boolean"
+    }
+  }
+}

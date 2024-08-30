@@ -1,0 +1,38 @@
+{
+  "categoryPath": "25632-Все;25633-Продовольственные товары;25710-Овощи-Фрукты;25711-Овощи;27596-Картофель;27597-Картофель",
+  "brand": "НетБренда",
+  "manufacturer": "",
+  "country": "Россия",
+  "name": "Картофель Фиолетовый фас.",
+  "package": {
+    "packType": "per_kilo",
+    "itemPerPack": 1
+  },
+  "eans": [
+    "2900001124577",
+    "2214106"
+  ],
+  "seller": {
+    "masterSellerId": 137,
+    "slugs": [
+      "monetka"
+    ]
+  },
+  "externalOfferId": "90000146770",
+  "createdAt": "2023-02-08T11:35:30.747834Z",
+  "updatedAt": "2023-02-18T01:50:09.789207Z",
+  "extra": "{\"fats\": null, \"images\": [], \"calories\": null, \"proteins\": null, \"is_alcohol\": \"false\", \"shelf_life\": \"10\", \"article_num\": \"Т0000146770\", \"description\": null, \"ingredients\": null, \"weight_netto\": null, \"weight_brutto\": null, \"additional_info\": null, \"is_private_label\": \"false\", \"storage_conditions\": null}",
+  "media": [{
+    "type": "image",
+    "name": "test_2.jpg",
+    "url": "https://www.bethowen.ru/images/sbermarket/538205_1.jpg",
+    "priority": 3}],
+  "isOption": false,
+  "variantsGroupId": "",
+  "categoriesIds": [
+    "27597"
+  ],
+  "externalCategoriesIds": [
+    "3052"
+  ]
+}

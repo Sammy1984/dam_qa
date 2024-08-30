@@ -1,0 +1,131 @@
+syntax = "proto3";
+
+package ru.spice.at.common.dto.dam.grpc;
+option go_package = "";
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+message OfferUpdate {
+  int64 external_offer_id = 1;
+  uint32 master_seller_id = 2;
+  int64 master_category_id = 3;
+  NullableInt32 external_task_id = 4;
+  NullableInt32 sku = 5;
+  bool is_own_trademark = 6;
+  bool draft_done = 7;
+
+  enum Status {
+    NOT_TAKEN = 0;
+    BINDED = 1;
+    IN_WORK_MATCHING = 2;
+    NEED_CREATE_PRODUCT = 3;
+    NEED_CREATE_VARIANT_PRODUCT = 4;
+    NEED_CREATE_CATEGORY = 5;
+    IMPOSSIBLE_TO_PROCESS = 6;
+    DOUBLE = 7;
+    NOT_REQUIRE_PROCESSING = 8;
+    CONTENT_REQUEST_REQUIRED = 9;
+    CONTENT_REQUESTED = 10;
+    UNABLE_TO_REQUEST_CONTENT = 11;
+    CONTENT_REQUESTED_NOT_ANSWER = 12;
+    IN_WORK_CREATE_PRODUCT = 13;
+    IN_WORK_CREATE_CATEGORY = 14;
+    REQUIRED_TO_REQUEST_CONTENT_FROM_RETAILER = 15;
+    NOT_CURRENT_ASSORTMENT = 17;
+    DRAFT_COMPLETED = 20;
+    OFFER_SWITCH_OFF = 21;
+  }
+
+  Status status = 8;
+  string comment = 9;
+
+  enum MatchingStatus {
+    NO_STATUS = 0;
+    NO_EANS = 2;
+    NO_RESULTS = 3;
+    RESOLVING = 4;
+    MATCHED = 5;
+    NOT_BINDED = 6;
+  }
+  enum ProcessingStatus {
+    IN_WORK = 0;
+    ON_MODERATION = 1;
+    READY = 2;
+    CANCEL = 3;
+    NEW = 4;
+  }
+  enum CategorizationStatus {
+    CATEGORIZATION_NO_STATUS = 0;
+    UNCATEGORIZED = 1;
+    CATEGORIZED = 2;
+  }
+
+  MatchingStatus matching_status = 10;
+  ProcessingStatus processing_status = 11;
+  CategorizationStatus categorization_status = 12;
+  google.protobuf.Timestamp updated_at = 13;
+
+  enum ProcessType {
+    UNKNOWN = 0;
+    CREATE_TASK = 1;
+    FINALYZE_TASK = 2;
+    CANCEL_TASK = 3;
+    MANAGEMENT_COMMAND = 4;
+    ADMIN_PANEL = 5;
+    CHANGE_PRODUCT_ACTIVITY = 6;
+    CHANGE_BY_USER_IN_CARD = 7;
+    CHANGE_BY_USER_IN_LIST = 8;
+    REMOVE_FROM_TASK = 9;
+    ADD_TO_PRODUCT = 10;
+    REMOVE_FROM_PRODUCT = 11;
+    ADD_TO_TASK = 12;
+    CONTENT_AUTOGENERATION = 13;
+    IMPORT_OFFER = 14;
+    DELETE_MK = 15;
+  }
+
+  NullableInt32 creator_id = 14;
+  ProcessType process_type = 15;
+  NullableTaskType external_task_type = 16;
+  NullableString creator_email = 17;
+  repeated Media media = 18;
+  NullableTaskType task_type_for_dam = 19 [deprecated=true];
+  NullableInt32 task_id_for_dam = 20 [deprecated=true];
+}
+
+enum TaskType {
+  CHECK_AUTOMATCH = 0;
+  CREATE_PRODUCTS = 1;
+  ACTUALIZATION_PRODUCTS = 2;
+  CATEGORIZATION_OFFERS = 3;
+  MODERATION_PRODUCTS = 4;
+}
+
+message NullableInt32 {
+  oneof kind {
+    google.protobuf.NullValue null = 1;
+    int32 data = 2;
+  }
+}
+
+message NullableTaskType {
+  oneof kind {
+    google.protobuf.NullValue null = 1;
+    TaskType data = 2;
+  }
+}
+
+message NullableString {
+  oneof kind {
+    google.protobuf.NullValue null = 1;
+    string data = 2;
+  }
+}
+
+message Media {
+  string media_id = 1;
+  uint32 priority = 2;
+  bool is_deleted = 3;
+}
+

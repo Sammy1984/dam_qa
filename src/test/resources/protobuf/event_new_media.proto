@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ru.spice.at.common.dto.dam.grpc;
+option go_package = "";
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+ 
+message Media {
+    uint64 external_offer_id = 1;
+    uint64 master_seller_id = 2;
+    string metadata_id = 3;
+    string url = 4;
+    NullableInt32 priority = 5;
+    google.protobuf.Timestamp updated_at = 6;
+}
+message NullableInt32 {
+  oneof kind {
+    google.protobuf.NullValue null = 1;
+    int32 data = 2;
+  }
+}

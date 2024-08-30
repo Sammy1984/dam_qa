@@ -1,0 +1,15 @@
+{
+  "assigneeName": "Продакшенов Контент",
+  "categoryName": "Продукты питания",
+  "formatFilenameMessage": "Неверный формат значения поля",
+  "longFilenameMessage": "Не более 250 символов",
+  "longPriorityMessage": "Значение не соответствует допустимому диапазону меньше 1 и больше 500",
+  "warningPriorityMessage": "Значение поля приоритет должно быть заполнено",
+  "longDescriptionMessage": "Не более 500 символов",
+  "longTagsMessage": "30 символов на слово не более 100 слов",
+  "longSkuMessage": "Не более 100 символов",
+  "warningSkuMessage": "Значение поля SKU должно быть заполнено",
+  "longReceivedMessage": "Не более 150 символов",
+  "actualStatusMessage": "Для статуса \"Актуальный\" не соблюдены все условия",
+  "masterSellerName": "1001 Ночь"
+}

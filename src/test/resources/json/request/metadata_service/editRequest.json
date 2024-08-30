@@ -1,0 +1,24 @@
+{
+  "filename":"testEdit11_1.png",
+  "origin_name":"origin_name",
+  "description":"Описание этого продукта зашкаливает",
+  "status_id":"277b941f-550a-4b58-b0ac-9d3e29c1d3ad",
+  "quality_id":"0bd6e34f-d924-4fae-bc1f-d864db16da15",
+  "source_id":"4e58fe04-1fdc-43d3-ab67-7a7e2c617dee",
+  "assignee_id":"671ea13b-aa6b-4379-a2e0-e048f8c3560b",
+  "master_category_id":"e0ad3145-da68-4cf6-9593-d534a1789e09",
+  "external_task_id": "123",
+  "master_seller_id": "04d87cac-4510-4848-a927-c9307b344cdc",
+  "is_own_trademark":null,
+  "is_main_image":false,
+  "is_copyright":true,
+  "is_raw_image":false,
+  "keywords":[
+    "слово",
+    "word",
+    "key"
+  ],
+  "received":"а тут ничего нет",
+  "sku":"testEdit11",
+  "priority": 5
+}

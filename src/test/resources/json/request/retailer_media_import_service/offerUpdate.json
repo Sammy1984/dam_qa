@@ -1,0 +1,12 @@
+{
+  "external_offer_id": 90000146770,
+  "master_seller_id": 123,
+  "external_task_id": {
+    "data": 101
+  },
+  "sku": {
+    "data": 123
+  },
+  "is_own_trademark": false,
+  "draft_done": false
+}

@@ -1,0 +1,73 @@
+package ru.spice.at.common.emuns.dam;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+public enum ImageParameters {
+    SKU("sku", "data.sku"),
+    SKUS("skus", "data.sku"),
+    KEY("key", "data.key"),
+    METADATA_ID("metadata_id", "data.id"),
+    FILENAME("filename", "data.filename"),
+    RECEIVED("received", "data.received"),
+    KEYWORDS("keywords", "data.keywords"),
+    DESCRIPTION("description", "data.description"),
+    SOURCE("source", "data.source"),
+    SOURCE_NAME("source_name", "data.source.name"),
+    SOURCE_ID("source_id", "data.source"),
+    SOURCE_IDS("source_ids", "data.source"),
+    STATUS_CODE("status_code", "data.status"),
+    STATUS_NAME("status_name", "data.status.name"),
+    STATUS_ID("status_id", "data.status"),
+    STATUS_IDS("status_ids", "data.status"),
+    QUALITY_ID("quality_id", "data.quality"),
+    QUALITY_IDS("quality_ids", "data.quality"),
+    QUALITY_CODE("quality_code", ""),
+    QUALITY_NAME("quality_name", "data.quality.name"),
+    ASSIGNEE_ID("assignee_id", "data.assignee"),
+    ASSIGNEE_IDS("assignee_ids", "data.assignee"),
+    CREATED_BY("created_by", "data.created_by"),
+    CREATED_AT("created_at", "data.created_at"),
+    UPDATED_BY("updated_by", "data.updated_by"),
+    UPDATED_AT("updated_at", "data.updated_at"),
+    READY_FOR_RETOUCH_AT("ready_for_retouch_at", "data.ready_for_retouch_at"),
+    CREATED_AT_FROM("created_at_from", "data.created_at"),
+    CREATED_AT_TO("created_at_to", "data.created_at"),
+    UPDATED_AT_FROM("updated_at_from", "data.updated_at"),
+    UPDATED_AT_TO("updated_at_to", "data.updated_at"),
+    READY_FOR_RETOUCH_AT_FROM("ready_for_retouch_at_from", "data.ready_for_retouch_at"),
+    READY_FOR_RETOUCH_AT_TO("ready_for_retouch_at_to", "data.ready_for_retouch_at"),
+    MASTER_CATEGORY("master_category", "data.master_category"),
+    MASTER_CATEGORY_NAME("master_category_name", "data.master_category"),
+    MASTER_CATEGORY_ID("master_category_id", "data.master_category"),
+    MASTER_CATEGORY_IDS("master_category_ids", "data.master_category"),
+    IS_MAIN_IMAGE("is_main_image", "data.is_main_image"),
+    IS_OWN_TRADEMARK("is_own_trademark", "data.is_own_trademark"),
+    OWN_TRADEMARK("own_trademark", "data.own_trademark"),
+    IS_COPYRIGHT("is_copyright", "data.is_copyright"),
+    COPYRIGHT("copyright", "data.copyright"),
+    IS_RAW_IMAGE("is_raw_image", "data.is_raw_image"),
+    RAW_IMAGE("raw_image", "data.raw_image"),
+    PRIORITY("priority", "data.priority"),
+    PRIORITIES("priorities", "data.priority"),
+    ORIGIN_FILENAME("origin_filename", "data.origin_filename"),
+    EXTERNAL_OFFER("external_offer", "data.external_offer"),
+    EXTERNAL_OFFER_IDS("external_offer_ids", "data.external_offer"),
+    EXTERNAL_TASK_ID("external_task_id", "data.external_task_id"),
+    EXTERNAL_TASK_IDS("external_task_ids", "data.external_task_id"),
+    EXTERNAL_DRAFT_DONE("external_draft_done", "data.external_draft_done"),
+    MASTER_SELLER_ID("master_seller_id", "data.master_seller_id"),
+    MASTER_SELLER_IDS("master_seller_ids", "data.master_seller_id"),
+    MASTER_SELLER("master_seller", "data.master_seller"),
+    IMPORT_TYPE("import_type", "data.import_type"),
+    ORIGINAL_METADATA_ID("original_metadata_id", "data.original_metadata_id"),
+    DERIVED_METADATA_ID("derived_metadata_id", "data.derived_metadata_id"),
+    WIDTH("width", "data.width"),
+    HEIGHT("height", "data.height"),
+    FORMAT("format", "data.format");
+
+    private final String name;
+    private final String path;
+}

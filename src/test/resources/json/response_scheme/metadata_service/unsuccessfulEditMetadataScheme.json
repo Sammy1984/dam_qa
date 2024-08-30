@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "error"
+  ],
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": [
+        "type",
+        "title",
+        "status",
+        "invalid_params"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["bad-request"]
+        },
+        "key": {
+          "type": "string",
+          "enum": ["Your request parameters didn't validate."]
+        },
+        "status": {
+          "type": "integer",
+          "enum": [400]
+        },
+        "invalid_params": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/results"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "results": {
+      "type": "object",
+      "required": [
+        "name",
+        "type",
+        "reason"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
